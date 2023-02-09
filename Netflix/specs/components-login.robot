@@ -1,16 +1,16 @@
 ***Settings***
 Library  Selenium2Library
 
-Resource        ../../casino/stepdefinitions/components-login-sd.robot         
+Resource        ../../Netflix/stepdefinitions/components-login-sd.robot         
          
 
 ***Test Cases***
 Check elements on Login page
-    Given that the casino login page is open
+    Given that the Netflix login page is open
     Then the content load correctly 
 
 *** Keywords ***
-that the casino login page is open
+that the Netflix login page is open
     Given I am in login page
     
 the content load correctly 

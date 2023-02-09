@@ -1,5 +1,5 @@
 *** Settings ***
-Resource       ../../casino/configuration/configuration-dev.robot
+Resource       ../../Netflix/configuration/configuration-dev.robot
 
 
 *** Variables ***
@@ -7,8 +7,8 @@ ${button-Registration}  css=*[href="/user/registration"]
 
 
 *** Keywords ***
-I am in casino page
-    Open Browser   ${URL_casino}  chrome
+I am in Netflix page
+    Open Browser   ${URL_Netflix}  chrome
 
 The registration option was selected
     click element  ${button-Registration}    

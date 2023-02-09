@@ -2,7 +2,7 @@
 
 
 *** Variables ***
-${URL_casino}     https://www.netflix.com/co/
+${URL_Netflix}     https://www.netflix.com/co/
 ${EMAIL_ADMIN}    
 ${PASS_ADMIN}
 ${PASSWORD}        

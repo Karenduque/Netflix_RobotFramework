@@ -1,6 +1,6 @@
 *** Settings ***
-Resource      ../../casino/pagesobjects/registration-page.robot
-Resource      ../../casino/configuration/configuration-dev.robot
+Resource      ../../Netflix/pagesobjects/registration-page.robot
+Resource      ../../Netflix/configuration/configuration-dev.robot
 
 *** Keywords ***
 The data filled correnctly

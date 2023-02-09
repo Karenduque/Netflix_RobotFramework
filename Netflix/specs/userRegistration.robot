@@ -1,23 +1,23 @@
 ***Settings***
 Library  Selenium2Library
 
-Resource       ../../casino/pagesobjects/registration-page.robot
-Resource       ../../casino/facades/casino-facade.robot
+Resource       ../../Netflix/pagesobjects/registration-page.robot
+Resource       ../../Netflix/facades/Netflix-facade.robot
 
 ***Test Cases***
 Correct user registration
-   Given the casino page is open
+   Given the Netflix page is open
     When the registration data are completed
     Then the user was created
 
 Incorrect user registration without Code
-   Given the casino page is open
+   Given the Netflix page is open
     When the registration data are not completed
     Then the user was not created
 
 *** Keywords ***
-the casino page is open
-    Given I am in casino page
+the Netflix page is open
+    Given I am in Netflix page
     And the registration option was selected
     
 the registration data are completed
