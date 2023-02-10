@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.10.10 on darwin)" generated="20230209 16:33:00.443" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.10.10 on darwin)" generated="20230209 16:34:27.950" rpa="false" schemaversion="3">
 <suite id="s1" name="Components-Login" source="/Users/karenduque/Desktop/karen/KarenLocal/Netflix_RobotFramework/Netflix/specs/components-login.robot">
 <test id="s1-t1" name="Check elements on Login page" line="8">
 <kw name="Given that the Netflix login page is open">
 <kw name="Given I am in login page">
-<msg timestamp="20230209 16:33:00.626" level="FAIL">No keyword with name 'Given I am in login page' found.</msg>
-<status status="FAIL" starttime="20230209 16:33:00.626" endtime="20230209 16:33:00.626"/>
+<msg timestamp="20230209 16:34:28.145" level="FAIL">No keyword with name 'Given I am in login page' found.</msg>
+<status status="FAIL" starttime="20230209 16:34:28.145" endtime="20230209 16:34:28.145"/>
 </kw>
-<status status="FAIL" starttime="20230209 16:33:00.622" endtime="20230209 16:33:00.626"/>
+<status status="FAIL" starttime="20230209 16:34:28.141" endtime="20230209 16:34:28.145"/>
 </kw>
 <kw name="Then the content load correctly">
-<status status="NOT RUN" starttime="20230209 16:33:00.626" endtime="20230209 16:33:00.626"/>
+<status status="NOT RUN" starttime="20230209 16:34:28.145" endtime="20230209 16:34:28.145"/>
 </kw>
-<status status="FAIL" starttime="20230209 16:33:00.621" endtime="20230209 16:33:00.626">No keyword with name 'Given I am in login page' found.</status>
+<status status="FAIL" starttime="20230209 16:34:28.140" endtime="20230209 16:34:28.146">No keyword with name 'Given I am in login page' found.</status>
 </test>
-<status status="FAIL" starttime="20230209 16:33:00.444" endtime="20230209 16:33:00.627"/>
+<status status="FAIL" starttime="20230209 16:34:27.952" endtime="20230209 16:34:28.146"/>
 </suite>
 <statistics>
 <total>
@@ -27,6 +27,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230209 16:33:00.621" level="ERROR">Error in file '/Users/karenduque/Desktop/karen/KarenLocal/Netflix_RobotFramework/Netflix/specs/components-login.robot' on line 4: Resource file '../../Netflix/stepdefinitions/components-login-sd.robot' does not exist.</msg>
+<msg timestamp="20230209 16:34:28.140" level="ERROR">Error in file '/Users/karenduque/Desktop/karen/KarenLocal/Netflix_RobotFramework/Netflix/specs/components-login.robot' on line 4: Resource file '../../Netflix/stepdefinitions/components-login-sd.robot' does not exist.</msg>
 </errors>
 </robot>
