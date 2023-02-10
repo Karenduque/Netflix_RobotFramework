@@ -9,6 +9,11 @@ ${button-Registration}  css=*[href="/user/registration"]
 *** Keywords ***
 I am in Netflix page
     Open Browser   ${URL_Netflix}  chrome
+    Maximize Browser Window
+
+Print title of Netflix home
+  ${title}=  Get Title
+  Log To Console  ${title}
 
 The registration option was selected
     click element  ${button-Registration}    

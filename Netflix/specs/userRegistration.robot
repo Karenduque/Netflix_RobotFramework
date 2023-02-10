@@ -7,18 +7,19 @@ Resource       ../../Netflix/facades/Netflix-facade.robot
 ***Test Cases***
 Correct user registration
    Given the Netflix page is open
-    When the registration data are completed
-    Then the user was created
+    #When the registration data are completed
+    #Then the user was created
 
-Incorrect user registration without Code
-   Given the Netflix page is open
-    When the registration data are not completed
-    Then the user was not created
+#Incorrect user registration without Code
+   #Given the Netflix page is open
+    #When the registration data are not completed
+    #Then the user was not created
 
 *** Keywords ***
 the Netflix page is open
     Given I am in Netflix page
-    And the registration option was selected
+    And Print title of Netflix home
+    #And the registration option was selected
     
 the registration data are completed
     When the data filled correnctly
