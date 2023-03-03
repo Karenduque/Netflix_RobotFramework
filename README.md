@@ -19,9 +19,9 @@ This following suite uses the following technologies and frameworks:
 
 To run the suite you need to execute: 
 ```
-pip install robotframework   
-install robotframework-seleniumlibrary
-install robotframework-selenium2library         
+pip install robotframework o pip3 install robotframework 
+pip3 install robotframework-seleniumlibrary
+pip3 install robotframework-selenium2library         
 
 robot TC1.robot
 
