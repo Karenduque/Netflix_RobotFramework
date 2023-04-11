@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230330 07:42:52.139" rpa="false" schemaversion="3">
+<suite id="s1" name="Netflix RobotFramework" source="C:\Users\osman\OneDrive\Desktop\Automatizacion\Netflix_RobotFramework">
+<suite id="s1-s1" name="Netflix" source="C:\Users\osman\OneDrive\Desktop\Automatizacion\Netflix_RobotFramework\Netflix">
+<suite id="s1-s1-s1" name="Specs" source="C:\Users\osman\OneDrive\Desktop\Automatizacion\Netflix_RobotFramework\Netflix\specs">
+<suite id="s1-s1-s1-s1" name="Restart-Membership" source="C:\Users\osman\OneDrive\Desktop\Automatizacion\Netflix_RobotFramework\Netflix\specs\restart-membership.robot">
+<test id="s1-s1-s1-s1-t1" name="Scenario: Correct restart membership" line="8">
+<kw name="Given I am on the restart membership page">
+<msg timestamp="20230330 07:42:57.937" level="FAIL">No keyword with name 'Given I am on the restart membership page' found.</msg>
+<status status="FAIL" starttime="20230330 07:42:57.925" endtime="20230330 07:42:57.944"/>
+</kw>
+<kw name="When I enter the correct data">
+<status status="NOT RUN" starttime="20230330 07:42:58.169" endtime="20230330 07:42:58.170"/>
+</kw>
+<kw name="Then I restart membership">
+<status status="NOT RUN" starttime="20230330 07:42:58.427" endtime="20230330 07:42:58.438"/>
+</kw>
+<status status="FAIL" starttime="20230330 07:42:57.903" endtime="20230330 07:42:58.563">No keyword with name 'Given I am on the restart membership page' found.</status>
+</test>
+<status status="FAIL" starttime="20230330 07:42:52.570" endtime="20230330 07:42:58.880"/>
+</suite>
+<status status="FAIL" starttime="20230330 07:42:52.530" endtime="20230330 07:42:58.934"/>
+</suite>
+<status status="FAIL" starttime="20230330 07:42:52.435" endtime="20230330 07:42:59.103"/>
+</suite>
+<status status="FAIL" starttime="20230330 07:42:52.228" endtime="20230330 07:42:59.140"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Netflix RobotFramework">Netflix RobotFramework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Netflix">Netflix RobotFramework.Netflix</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Specs">Netflix RobotFramework.Netflix.Specs</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Restart-Membership">Netflix RobotFramework.Netflix.Specs.Restart-Membership</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
