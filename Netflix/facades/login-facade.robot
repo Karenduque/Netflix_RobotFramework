@@ -30,3 +30,7 @@ I fill the password
 
 I click button login    
     click element  ${button-login}  
+    Sleep  5s
+
+the user is loging
+    ${title}=  Get Title

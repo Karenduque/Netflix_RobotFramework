@@ -22,7 +22,7 @@ ask for help
 
 *** Keywords ***
 the Netflix login page is open
-    Given I am in Netflix Login page
+    Given I am in Netflix Login page2
     
 press help link
     When I press help link
