@@ -13,6 +13,8 @@ This following suite uses the following technologies and frameworks:
 * [Robot Framework](https://robotframework.org)
 * [PIP](https://www.groovypost.com/howto/install-pip-on-a-mac/)
 
+- Update PIP: python -m pip install --upgrade pip
+
 ## Running the tests
 
 ### Run the Suite
