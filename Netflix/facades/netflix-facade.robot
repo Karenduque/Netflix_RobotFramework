@@ -7,7 +7,7 @@ ${button-Registration}  css=*[href="/user/registration"]
 
 
 *** Keywords ***
-I am in Netflix page
+I am on the Netflix page
     Open Browser   ${URL_Netflix}  chrome
     Maximize Browser Window
 
