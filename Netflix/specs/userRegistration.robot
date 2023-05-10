@@ -5,9 +5,10 @@ Resource       ../../Netflix/pagesobjects/registration-page.robot
 Resource       ../../Netflix/facades/Netflix-facade.robot
 
 ***Test Cases***
-Correct user registration
-   Given the Netflix page is open
-    #When the registration data are completed
+Scenario: Correct user registration
+   Given the User page is open. I am in Netflix page
+        And Print title of Users Netflix name
+
     #Then the user was created
 
 #Incorrect user registration without Code

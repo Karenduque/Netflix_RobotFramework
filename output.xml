@@ -1,52 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230412 17:07:19.132" rpa="false" schemaversion="3">
-<suite id="s1" name="userRegistration" source="D:\Automatizacion\Netflix_RobotFramework\Netflix\specs\userRegistration.robot">
-<test id="s1-t1" name="Correct user registration" line="8">
-<kw name="Given the Netflix page is open">
-<kw name="Given I am in Netflix page" library="Netflix-facade">
-<kw name="Open Browser" library="Selenium2Library">
-<arg>${URL_Netflix}</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230412 17:07:20.441" level="INFO">Opening browser 'chrome' to base url 'https://www.netflix.com/co/'.</msg>
-<status status="PASS" starttime="20230412 17:07:20.441" endtime="20230412 17:07:30.875"/>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230504 08:45:08.427" rpa="false" schemaversion="3">
+<suite id="s1" name="Select-User" source="D:\Automatizacion\Netflix_RobotFramework\Netflix\specs\select-user.robot">
+<test id="s1-t1" name="Scenario:Select user of Netflix" line="8">
+<kw name="Given I am in the users page">
+<msg timestamp="20230504 08:45:09.947" level="FAIL">No keyword with name 'Given I am in the users page' found.</msg>
+<status status="FAIL" starttime="20230504 08:45:09.946" endtime="20230504 08:45:09.947"/>
 </kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230412 17:07:30.875" endtime="20230412 17:07:31.055"/>
+<kw name="And Print title of user name">
+<status status="NOT RUN" starttime="20230504 08:45:09.965" endtime="20230504 08:45:09.965"/>
 </kw>
-<status status="PASS" starttime="20230412 17:07:20.440" endtime="20230412 17:07:31.056"/>
+<kw name="When I do click on the correct user">
+<status status="NOT RUN" starttime="20230504 08:45:09.969" endtime="20230504 08:45:09.969"/>
 </kw>
-<kw name="And Print title of Netflix home" library="Netflix-facade">
-<kw name="Get Title" library="Selenium2Library">
-<var>${title}</var>
-<doc>Returns the title of the current page.</doc>
-<msg timestamp="20230412 17:07:31.064" level="INFO">${title} = Netflix Colombia: Ve series online, ve películas online</msg>
-<status status="PASS" starttime="20230412 17:07:31.056" endtime="20230412 17:07:31.064"/>
+<kw name="Then Netflix redirects to series and movies page">
+<status status="NOT RUN" starttime="20230504 08:45:09.970" endtime="20230504 08:45:09.970"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${title}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230412 17:07:31.064" endtime="20230412 17:07:31.067"/>
-</kw>
-<status status="PASS" starttime="20230412 17:07:31.056" endtime="20230412 17:07:31.068"/>
-</kw>
-<status status="PASS" starttime="20230412 17:07:20.440" endtime="20230412 17:07:31.069"/>
-</kw>
-<status status="PASS" starttime="20230412 17:07:20.439" endtime="20230412 17:07:31.072"/>
+<status status="FAIL" starttime="20230504 08:45:09.920" endtime="20230504 08:45:09.973">No keyword with name 'Given I am in the users page' found.</status>
 </test>
-<status status="PASS" starttime="20230412 17:07:19.134" endtime="20230412 17:07:31.074"/>
+<test id="s1-t2" name="The user procceds to Select user" line="14">
+<kw name="Given the user can see the name of the user">
+<msg timestamp="20230504 08:45:09.993" level="FAIL">No keyword with name 'Given the user can see the name of the user' found.</msg>
+<status status="FAIL" starttime="20230504 08:45:09.993" endtime="20230504 08:45:09.994"/>
+</kw>
+<kw name="Then user clicks on the correct user">
+<status status="NOT RUN" starttime="20230504 08:45:10.021" endtime="20230504 08:45:10.021"/>
+</kw>
+<kw name="And user can see the user section selected">
+<status status="NOT RUN" starttime="20230504 08:45:10.035" endtime="20230504 08:45:10.036"/>
+</kw>
+<status status="FAIL" starttime="20230504 08:45:09.983" endtime="20230504 08:45:10.037">No keyword with name 'Given the user can see the name of the user' found.</status>
+</test>
+<status status="FAIL" starttime="20230504 08:45:08.431" endtime="20230504 08:45:10.044"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="userRegistration">userRegistration</stat>
+<stat pass="0" fail="2" skip="0" id="s1" name="Select-User">Select-User</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230504 08:45:09.905" level="ERROR">Error in file 'D:\Automatizacion\Netflix_RobotFramework\Netflix\specs\select-user.robot' on line 5: Resource file '..\..\NetFlix\facades\Netflix-facades.robot' does not exist.</msg>
 </errors>
 </robot>
