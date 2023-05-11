@@ -8,5 +8,5 @@ ${loginBoton}  xpath://*[@id="appMountPoint"]/div/div[3]/div/div/div[1]/form/but
 
 *** Keywords ***
  
-que yo abro la url
-verifico que estoy en la pagina
+Given I open the url
+Then verify that I am on the page

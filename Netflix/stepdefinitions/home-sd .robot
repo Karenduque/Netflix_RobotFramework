@@ -4,19 +4,19 @@ Resource      ../../Netflix/configuration/configuration-dev.robot
 
 *** Keywords ***
 I am in Netflix page
- que yo abro la url
- verifico que estoy en la pagina
- le doy clic al boton de iniciar sesion
+ Given that I open the url
+ whent I verify that I am on the page
+ then I click the login button sign in 
 
-que yo abro la url
+that I open the url
  Open Browser   ${URL_Netflix}  chrome
  Maximize Browser Window
 
-verifico que estoy en la pagina
+I verify that I am on the page
   ${title}=  Get Title
   Log To Console  ${title}
 
-le doy clic al boton de iniciar sesion
+I click the login button
    click element  ${iniciarSesionBoton}
 
 

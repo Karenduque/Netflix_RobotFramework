@@ -5,7 +5,7 @@ Resource        ../../Netflix/stepdefinitions/loggin-sd.robot
 Resource       ../../Netflix/facades/Netflix-facade.robot         
 
 ***Test Cases***
-Escenario iniciar sesion 
+Login Scenario
  Given  I am in Netflix page
  When I start session
  Then the user logs in
@@ -13,13 +13,13 @@ Escenario iniciar sesion
 *** Keywords ***
 
 I am in Netflix page
- Given que yo abro la url
- Then verifico que estoy en la pagina
+ Given that I open the url
+ Then verify that I am on the page
 
 I start session
- Given que estoy en la pagina de inicio de sesion 
+ Given that I'm on the login page 
  When I fill in the required information
- Then yo puedo iniciar sesion 
+ Then  I can log in
 
 the user logs in
- Then estoy en la pagina de seleccionar perfil
+ Then i am on the select profile page
