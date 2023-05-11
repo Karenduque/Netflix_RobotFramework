@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.10 on win32)" generated="20230510 15:39:04.153" rpa="false" schemaversion="3">
+<suite id="s1" name="User Login Dashboard" source="C:\Users\jgarcia\Documents\Proyectos automatizacion\Automatizacion\Netflix_RobotFramework\Netflix\specs\user_login_dashboard.robot">
+<test id="s1-t1" name="User acces to dashboard" line="9">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<kw name="Given that the Netflix login page is open">
+<msg timestamp="20230510 15:39:04.459" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<status status="FAIL" starttime="20230510 15:39:04.457" endtime="20230510 15:39:04.459"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.457" endtime="20230510 15:39:04.459"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.457" endtime="20230510 15:39:04.459"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.456" endtime="20230510 15:39:04.459"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.456" endtime="20230510 15:39:04.459"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.456" endtime="20230510 15:39:04.459"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.456" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.456" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.456" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.456" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.456" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.461"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.467"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.467"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.467"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.470"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.452" endtime="20230510 15:39:04.470"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.451" endtime="20230510 15:39:04.470"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.443" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.441" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.471"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.474"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.476"/>
+</kw>
+<kw name="And user proceeds to log in">
+<status status="NOT RUN" starttime="20230510 15:39:04.476" endtime="20230510 15:39:04.476"/>
+</kw>
+<kw name="When user selects him profile">
+<status status="NOT RUN" starttime="20230510 15:39:04.481" endtime="20230510 15:39:04.481"/>
+</kw>
+<kw name="Then the dashboard load correctly">
+<status status="NOT RUN" starttime="20230510 15:39:04.481" endtime="20230510 15:39:04.481"/>
+</kw>
+<status status="FAIL" starttime="20230510 15:39:04.433" endtime="20230510 15:39:04.481">Maximum limit of started keywords and control structures exceeded.</status>
+</test>
+<status status="FAIL" starttime="20230510 15:39:04.160" endtime="20230510 15:39:04.485"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="User Login Dashboard">User Login Dashboard</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230510 15:39:04.411" level="ERROR">Error in file 'C:\Users\jgarcia\Documents\Proyectos automatizacion\Automatizacion\Netflix_RobotFramework\Netflix\stepdefinitions\SD_user_login_dashboard.robot' on line 2: Error in file 'C:\Users\jgarcia\Documents\Proyectos automatizacion\Automatizacion\Netflix_RobotFramework\Netflix\pagesobjects\PO_user_login_dashboard.robot' on line 25: Resource file with 'Test Cases' section is invalid.</msg>
+<msg timestamp="20230510 15:39:04.415" level="ERROR">Error in file 'C:\Users\jgarcia\Documents\Proyectos automatizacion\Automatizacion\Netflix_RobotFramework\Netflix\stepdefinitions\SD_user_login_dashboard.robot' on line 4: Error in file 'C:\Users\jgarcia\Documents\Proyectos automatizacion\Automatizacion\Netflix_RobotFramework\Netflix\specs\user_login_dashboard.robot' on line 8: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>

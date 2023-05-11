@@ -1,9 +1,35 @@
 *** Settings ***
 Resource      ../../Netflix/pagesobjects/registration-page.robot
 Resource      ../../Netflix/configuration/configuration-dev.robot
+Resource      ../../Netflix/facades/netflix-facade.robot
+
+Library    OperatingSystem
+
+***Test Cases***
+User acces to home_page
+  Given I am in Netflix page
+  When The user can see "Iniciar Sesion" button
+  And I logged in Netflix
+  Then I can see the home page
+
 
 *** Keywords ***
-The data filled correnctly
+I am in Netflix page
+    Open Browser   ${URL_Netflix}  chrome
+    Maximize Browser Window
+
+The user can see "Iniciar Sesion" button
+    I see the login fields  #este debe estar en page
+
+I logged in Netflix
+    I fill the email and password
+    
+
+I can see the home page
+    I see the Netflix Home page  # debe estar en page
+
+
+The data filled correctly
   I fill the login
   I accept Terms & Conditions
   I fill Password
@@ -19,38 +45,9 @@ The data filled incorrectly
   I fill Repeat password
   I click on Registration button
 
-Shows the message of creation not successful
-  ${errorMessage}    Get Text    xpath=/html/body/div[1]/main/div/div[1]/div/div[2]/form/fieldset[1]/div[6]/div[2]
-  Should Be Equal As Strings    ${errorMessage}    The verification code field cannot be empty.
-  Close browser
 
-Shows the mesaje of creation succesfull
-  ${responseM1}    Get Text    xpath=/html/body/div[1]/main/div/div/div[2]/h1
-  Should Be Equal As Strings    ${responseM1}    Congratulations!
-  ${responseM2}    Get Text    xpath=/html/body/div[1]/main/div/div/div[2]/p
-  Should Be Equal As Strings    ${responseM2}     Your registration has been successful
-  Close browser
 
-I fill the login
-  Wait Until Element is Visible   ${loginInput}  30
-  Input text   ${loginInput}    ${EMAIL_ADMIN}
 
-I accept Terms & Conditions
-  click element  ${termConditionsCheckBox}
 
-I fill Password
-  Wait Until Element is Visible   ${passwordInput}  30
-  Input text   ${passwordInput}    ${PASSWORD}
 
-I fill Repeat password
-  Wait Until Element is Visible   ${repeatPasswordInput}  30
-  Input text   ${repeatPasswordInput}    ${PASSWORD}
 
-#Este codigo debe extraterse de la imagen, deberia hacerse con OCR
-I fill Enter code
-  ${codeImg}    Get Text    ${enterCodeImg}
-  Wait Until Element is Visible   ${enterCodeInput}  30
-  Input text   ${enterCodeInput}    ${codeImg}
-
-I click on Registration button
-  click element  ${registrationButton}    
