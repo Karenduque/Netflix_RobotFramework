@@ -1,4 +1,4 @@
-***Settings***
+*** Settings ***
 Library  Selenium2Library
 
 Resource        ../../Netflix/stepdefinitions/components-login-sd.robot         
