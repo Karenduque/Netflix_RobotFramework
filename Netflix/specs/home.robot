@@ -1,21 +1,22 @@
 ***Settings***
-Library  Selenium2Library
+Resource    ../../Netflix/stepdefinitions/home-sd.robot  
+Resource    ../../Netflix/configuration/configuration-dev.robot
+Resource    ../../Netflix/pagesobjects/home-page.robot
 
-Resource   ../../Netflix/pagesobjects/registration-page.robot
-Resource   ../../NetFlix/facades/Netflix-facades.robot
-
-***Test Cases***
-Scenario:Select User Netflix
-   Given I am in the Netflix page
-     When clicking on Login button
-     Then Netflix redirects to Register page       
+*** Test Cases ***
+Scenario:Home page Netflix
+    Given I am in the Netflix page
+    When clicking on Sign in button
+    Then Netflix redirects to Sign in page       
 
 *** Keywords ***
-I am in Netflix page
-   I open the url
-   verify I am in the page
-   I click on Login button
+Given I am in the Netflix page
+    I open the url
+    Verify I am in the home page
+    I click on Login button
 
-I open the url
-    Open Browser   ${URL_Netflix}  chrome
-    Maximize Browser Window
+When clicking on Sign in button
+    When the data filled correnctly in the page
+
+Then Netflix redirects to Sign in page
+    When the data filled correnctly

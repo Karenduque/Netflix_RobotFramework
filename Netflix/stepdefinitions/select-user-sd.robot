@@ -1,6 +1,7 @@
 *** Settings ***
 Library  Selenium2Library
 
+Resource       ../../Netflix/pagesobjects/select-user-page.robot
 Resource       ../../Netflix/pagesobjects/registration-page.robot
 Resource       ../../Netflix/configuration/configuration-dev.robot
 Resource       ../../Netflix/facades/Netflix-facade

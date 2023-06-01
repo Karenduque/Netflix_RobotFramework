@@ -1,52 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230412 21:37:18.242" rpa="false" schemaversion="3">
-<suite id="s1" name="userRegistration" source="D:\Automatizacion\Netflix_RobotFramework\Netflix\specs\userRegistration.robot">
-<test id="s1-t1" name="Correct user registration" line="8">
-<kw name="Given the Netflix page is open">
-<kw name="Given I am in Netflix page" library="Netflix-facade">
-<kw name="Open Browser" library="Selenium2Library">
-<arg>${URL_Netflix}</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230412 21:37:18.815" level="INFO">Opening browser 'chrome' to base url 'https://www.netflix.com/co/'.</msg>
-<status status="PASS" starttime="20230412 21:37:18.814" endtime="20230412 21:37:26.470"/>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230525 08:20:32.167" rpa="false" schemaversion="3">
+<suite id="s1" name="Select-User" source="D:\Automatizacion\Netflix_RobotFramework\Netflix\specs\select-user.robot">
+<test id="s1-t1" name="Scenario:Select user of Netflix" line="7">
+<kw name="Given I am in User profile page">
+<msg timestamp="20230525 08:20:32.514" level="FAIL">User keyword 'Given I am in User profile page' contains no keywords.</msg>
+<status status="FAIL" starttime="20230525 08:20:32.513" endtime="20230525 08:20:32.514"/>
 </kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230412 21:37:26.470" endtime="20230412 21:37:26.637"/>
+<kw name="When I do click on the correct user profile icon">
+<status status="NOT RUN" starttime="20230525 08:20:32.515" endtime="20230525 08:20:32.515"/>
 </kw>
-<status status="PASS" starttime="20230412 21:37:18.814" endtime="20230412 21:37:26.637"/>
+<kw name="Then Netflix redirects to series and movies content">
+<status status="NOT RUN" starttime="20230525 08:20:32.515" endtime="20230525 08:20:32.515"/>
 </kw>
-<kw name="And Print title of Netflix home" library="Netflix-facade">
-<kw name="Get Title" library="Selenium2Library">
-<var>${title}</var>
-<doc>Returns the title of the current page.</doc>
-<msg timestamp="20230412 21:37:26.648" level="INFO">${title} = Netflix Colombia: Ve series online, ve películas online</msg>
-<status status="PASS" starttime="20230412 21:37:26.638" endtime="20230412 21:37:26.648"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${title}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230412 21:37:26.648" endtime="20230412 21:37:26.649"/>
-</kw>
-<status status="PASS" starttime="20230412 21:37:26.638" endtime="20230412 21:37:26.649"/>
-</kw>
-<status status="PASS" starttime="20230412 21:37:18.813" endtime="20230412 21:37:26.649"/>
-</kw>
-<status status="PASS" starttime="20230412 21:37:18.812" endtime="20230412 21:37:26.650"/>
+<status status="FAIL" starttime="20230525 08:20:32.512" endtime="20230525 08:20:32.516">User keyword 'Given I am in User profile page' contains no keywords.</status>
 </test>
-<status status="PASS" starttime="20230412 21:37:18.245" endtime="20230412 21:37:26.652"/>
+<status status="FAIL" starttime="20230525 08:20:32.169" endtime="20230525 08:20:32.523"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="userRegistration">userRegistration</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Select-User">Select-User</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230525 08:20:32.496" level="ERROR">Error in file 'D:\Automatizacion\Netflix_RobotFramework\Netflix\pagesobjects\select-user-page.robot' on line 6: Resource file '..\..\Netflix\facades\Netflix-facade' does not exist.</msg>
+<msg timestamp="20230525 08:20:32.501" level="ERROR">Error in file 'D:\Automatizacion\Netflix_RobotFramework\Netflix\pagesobjects\select-user-page.robot' on line 8: Importing library 'Operatingsystem' failed: ModuleNotFoundError: No module named 'Operatingsystem'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\cathe\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\cathe\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\cathe\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\cathe\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\cathe\AppData\Local\Programs\Python\Python311
+  C:\Users\cathe\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
 </errors>
 </robot>
