@@ -5,13 +5,12 @@ Resource        ../../Netflix/stepdefinitions/loggin-sd.robot
 Resource       ../../Netflix/facades/Netflix-facade.robot         
 
 ***Test Cases***
-Login Scenario
- Given  I am in Netflix page
+#Login Scenario
+ Given I am in Netflix page
  When I start session
  Then the user logs in
 
 *** Keywords ***
-
 I am in Netflix page
  Given that I open the url
  Then verify that I am on the page
