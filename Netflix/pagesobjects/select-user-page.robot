@@ -17,11 +17,11 @@ ${enterCodeImg}  id:yw1
 ${registrationButton}  css:button.button--s1.button--t1
 
 
-${SignIn-label}    css:.e1ax5wel1 default-ltr-cache-1arlfc3
-${id-userLoginId}    id:id_userLoginId
+${SignInlabel}    css:.e1ax5wel1 default-ltr-cache-1arlfc3
+${userLoginInput}    id:id_userLoginId
 ${id-userPassword}    id:id_password
-${SignIn-button}    css:.btn.login-button.btn-submit.btn-small
-${profile-Icon}    xpath:  //div[@class='profile-icon'][@data-profile-guid='CNENCONDBFAN5KFQ4PVAG447JA']
+${SignInbutton}    css:.btn.login-button.btn-submit.btn-small
+${profileIcon}    xpath:  //div[@class='profileIcon'][@data-profile-guid='CNENCONDBFAN5KFQ4PVAG447JA']
 ${My-ContentTitle}    css.row-header-title
 
 *** Keywords ***

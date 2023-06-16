@@ -12,7 +12,7 @@ Library  Operatingsystem
 Scenario:Select user of Netflix
     Given I am in Netflix page 
     when I click on the signin button
-    And I enter the username and password
+    And I enter the username and password  
     Then I click on Signin button
     When I do click on the correct user profile icon
     Then Netflix redirects to series and movies content
@@ -23,31 +23,29 @@ The data filled correnctly
   I fill username
   I fill Password
   I click on Signin button
-  I click on Profile-icon button
+  I click on profileIcon button
 
 I click on Signin label
   #Click on the sign in button label to go in
-  click element  ${SignIn-label}
+  click element  ${SignInlabel}
   Sleep   2s
 
 I fill username
   #Enter username
-  click element  ${id-userLoginId}
-  Wait Until Element is Visible   ${id-userLoginId}  
-  Input text   ${id-userLoginId}    jquinterocortes@gmail.com
+  Wait Until Element is Visible   ${userLoginInput}  30  
+  Input text   ${userLoginInput}    ${EMAIL_ADMIN} 
 
 I fill Password
   #Enter password
-  click element  ${id-userPassword}
-  Wait Until Element is Visible   ${id-userPassword} 
-  Input text   ${id-userPassword}    jq+14476253
+  Wait Until Element is Visible   ${userPasswordInput}  30 
+  Input text   ${userPasswordInput}    ${PASSWORD}
 
 I click on Signin button
   #Click on Sign in button
-  click element  ${SignIn-button}
+  click element  ${SignInbutton}
   Sleep   3s  
 
-I click on Profile-icon button
+I click on profileIcon button
   #Access to profile user
-  Wait Until Element is Visible   ${profile-Icon}
-  Input text   ${profile-Icon}    CNENCONDBFAN5KFQ4PVAG447JA
+  Wait Until Element is Visible   ${profileIcon}  30
+  Input text   ${profileIcon}    ${UserSelected}

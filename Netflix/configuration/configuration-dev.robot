@@ -4,5 +4,5 @@
 *** Variables ***
 ${URL_Netflix}     https://www.netflix.com/co/
 ${EMAIL_ADMIN}     jquinterocortes@gmail.com   
-${PASS_ADMIN}     jq-14476253
-${PASSWORD}        
+${PASSWORD}     jq-14476253
+${UserSelected}     CNENCONDBFAN5KFQ4PVAG447JA        

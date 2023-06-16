@@ -10,14 +10,14 @@ Scenario:Select user of Netflix
     Then Netflix redirects to series and movies content
 
 *** Keywords ***
-Given I am in User profile page
-    When the data filled correnctly
+I am in User profile page
+    the data filled correnctly
 
-When I do click on the correct user profile icon
-    Given I am in the profile page
-    And Show the user profiles
-    Then clicks on the correct user profile
-    And I can see the user section selected
+I do click on the correct user profile icon
+    I am in the profile page
+    Show the user profiles
+    clicks on the correct user profile
+    I can see the user section selected
 
-Then Netflix redirects to series and movies content
-    When the data selected correnctly
+Netflix redirects to series and movies content
+    the data selected correnctly

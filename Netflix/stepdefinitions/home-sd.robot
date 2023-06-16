@@ -2,6 +2,7 @@
 Library  Selenium2Library
 Resource      ../../Netflix/configuration/configuration-dev.robot
 Resource      ../../Netflix/pagesobjects/home-page.robot
+Resource      ../../Netflix/pagesobjects/login-page.robot
 
 *** Keywords ***
 I open the url
@@ -16,12 +17,9 @@ I click on Login button
     click element  ${signInButton}
 
 User can see the login fields
-    Given User can see the login fields
-    Wait Until Element Is Visible    ${id-userLoginId}
-    Wait Until Element Is Visible    ${id-userPassword}
+    Wait Until Element Is Visible    ${userLoginInput}  30
+    Wait Until Element Is Visible    ${userPasswordInput}  30
 
-When the data filled correnctly in the page
-    click element    ${id-userLoginId}
-    click element    ${id-userPassword}
-    Input Text    ${id_userLoginId}    ${EMAIL_ADMIN}
-    Input Text    ${id-userPassword}    ${PASS_ADMIN}
+the data filled correnctly in the page
+    Input Text    ${userLoginInput}    ${EMAIL_ADMIN}
+    Input Text    ${userPasswordInput}    ${PASSWORD}

@@ -2,7 +2,7 @@
 Resource    ../../Netflix/stepdefinitions/home-sd.robot  
 Resource    ../../Netflix/configuration/configuration-dev.robot
 Resource    ../../Netflix/pagesobjects/home-page.robot
-Resource      ../../Netflix/stepdefinitions/home-sd.robot
+Resource    ../../Netflix/pagesobjects/login-page.robot
 
 *** Test Cases ***
 Scenario:Home page Netflix
@@ -11,7 +11,7 @@ Scenario:Home page Netflix
     Then clicking on Sign in button      
 
 *** Keywords ***
-Given I am in the Netflix page
+I am in the Netflix page
     I open the url
     Verify I am in the home page
     I click on Login button
@@ -19,5 +19,5 @@ Given I am in the Netflix page
 I am filling the Sign data
     User can see the login fields
 
-When clicking on Sign in button
-    When the data filled correnctly in the page
+clicking on Sign in button
+    the data filled correnctly in the page
