@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.10 on win32)" generated="20230413 07:30:24.542" rpa="false" schemaversion="3">
+<suite id="s1" name="userRegistration-sd" source="C:\Users\jgarcia\Documents\Proyectos automatizacion\Automatizacion\Netflix_RobotFramework\Netflix\stepdefinitions\userRegistration-sd.robot">
+<test id="s1-t1" name="User acces to home_page" line="9">
+<kw name="Given I am in Netflix page">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL_Netflix}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230413 07:30:24.772" level="INFO">Opening browser 'chrome' to base url 'https://www.netflix.com/co/'.</msg>
+<status status="PASS" starttime="20230413 07:30:24.771" endtime="20230413 07:30:27.865"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230413 07:30:27.865" endtime="20230413 07:30:27.990"/>
+</kw>
+<status status="PASS" starttime="20230413 07:30:24.771" endtime="20230413 07:30:27.990"/>
+</kw>
+<kw name="When The user can see &quot;Iniciar Sesion&quot; button">
+<kw name="I see the login fields" library="registration-page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>xpath:/html/body/div[1]/div/div/div/div/div/div/header/div/span[3]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230413 07:30:27.992" endtime="20230413 07:30:28.062"/>
+</kw>
+<kw name="Get Location" library="Selenium2Library">
+<var>${location}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20230413 07:30:28.067" level="INFO">${location} = https://www.netflix.com/co/</msg>
+<status status="PASS" starttime="20230413 07:30:28.062" endtime="20230413 07:30:28.067"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${location}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230413 07:30:28.067" endtime="20230413 07:30:28.068"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230413 07:30:30.077" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230413 07:30:28.068" endtime="20230413 07:30:30.077"/>
+</kw>
+<status status="PASS" starttime="20230413 07:30:27.992" endtime="20230413 07:30:30.077"/>
+</kw>
+<status status="PASS" starttime="20230413 07:30:27.990" endtime="20230413 07:30:30.077"/>
+</kw>
+<kw name="And I logged in Netflix">
+<kw name="I fill the email and password" library="registration-page">
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath://*[@id="appMountPoint"]/div/div/div/div/div/div/header/div/span[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230413 07:30:30.079" level="INFO">Clicking element 'xpath://*[@id="appMountPoint"]/div/div/div/div/div/div/header/div/span[3]/a'.</msg>
+<status status="PASS" starttime="20230413 07:30:30.079" endtime="20230413 07:30:31.403"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230413 07:30:33.403" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230413 07:30:31.403" endtime="20230413 07:30:33.403"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id_userLoginId</arg>
+<arg>${USER_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230413 07:30:33.403" level="INFO">Typing text 'dsgarciau@gmail.com' into text field 'id_userLoginId'.</msg>
+<status status="PASS" starttime="20230413 07:30:33.403" endtime="20230413 07:30:33.574"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230413 07:30:36.581" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230413 07:30:33.574" endtime="20230413 07:30:36.581"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id_password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230413 07:30:36.581" level="INFO">Typing text 'dsgu0709' into text field 'id_password'.</msg>
+<status status="PASS" starttime="20230413 07:30:36.581" endtime="20230413 07:30:36.692"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230413 07:30:40.702" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230413 07:30:36.692" endtime="20230413 07:30:40.702"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//button[@class='btn login-button btn-submit btn-small']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230413 07:30:40.703" level="INFO">Clicking element '//button[@class='btn login-button btn-submit btn-small']'.</msg>
+<status status="PASS" starttime="20230413 07:30:40.702" endtime="20230413 07:30:40.758"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230413 07:30:43.770" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230413 07:30:40.758" endtime="20230413 07:30:43.770"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>//div[@class='profile-icon'][@data-profile-guid='GGRGWGCVZFDQTFIP2BH5ZKH6JU']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230413 07:30:43.770" endtime="20230413 07:30:43.795"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230413 07:30:46.805" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230413 07:30:43.795" endtime="20230413 07:30:46.805"/>
+</kw>
+<status status="PASS" starttime="20230413 07:30:30.079" endtime="20230413 07:30:46.805"/>
+</kw>
+<status status="PASS" starttime="20230413 07:30:30.077" endtime="20230413 07:30:46.806"/>
+</kw>
+<kw name="Then I can see the home page">
+<kw name="I see the Netflix Home page" library="registration-page">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//div[@class='profile-icon'][@data-profile-guid='GGRGWGCVZFDQTFIP2BH5ZKH6JU']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230413 07:30:46.810" level="INFO">Clicking element '//div[@class='profile-icon'][@data-profile-guid='GGRGWGCVZFDQTFIP2BH5ZKH6JU']'.</msg>
+<status status="PASS" starttime="20230413 07:30:46.809" endtime="20230413 07:30:46.865"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230413 07:30:51.872" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230413 07:30:46.865" endtime="20230413 07:30:51.872"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>//a[@href="/browse/my-list"='Mi lista']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230413 07:30:51.872" endtime="20230413 07:30:51.898"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230413 07:30:54.903" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230413 07:30:51.899" endtime="20230413 07:30:54.903"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230413 07:30:54.903" endtime="20230413 07:30:57.098"/>
+</kw>
+<status status="PASS" starttime="20230413 07:30:46.808" endtime="20230413 07:30:57.098"/>
+</kw>
+<status status="PASS" starttime="20230413 07:30:46.806" endtime="20230413 07:30:57.098"/>
+</kw>
+<status status="PASS" starttime="20230413 07:30:24.770" endtime="20230413 07:30:57.101"/>
+</test>
+<status status="PASS" starttime="20230413 07:30:24.543" endtime="20230413 07:30:57.104"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="userRegistration-sd">userRegistration-sd</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230413 07:30:24.568" level="ERROR">Error in file 'C:\Users\jgarcia\Documents\Proyectos automatizacion\Automatizacion\Netflix_RobotFramework\Netflix\pagesobjects\registration-page.robot' on line 2: Error in file 'C:\Users\jgarcia\Documents\Proyectos automatizacion\Automatizacion\Netflix_RobotFramework\Netflix\stepdefinitions\userRegistration-sd.robot' on line 8: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>
