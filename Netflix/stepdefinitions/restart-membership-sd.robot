@@ -5,22 +5,22 @@ Resource      ../../Netflix/configuration/configuration-dev.robot
 *** Keywords ***
 I do step one correctly
    I am in step one of restart membership
-   When I enter the password 
-   And I click next
-   Then I can go to step two
+   I enter the password 
+   I click next
+   I can go to step two
 
 
 I do step two correctly
-   Given I am in step two of restat membership
-   When I select the ideal plan
-   And I click next
-   Then I can go to step three
+   I am in step two of restat membership
+   I select the ideal plan
+   I click next
+   I can go to step three
 
 
 I do step three correctly
-   Given I am in step three of restart membership
-   When I review the information
-   And I click start membership
+   I am in step three of restart membership
+   I review the information
+   I click start membership
 
 
 Netflix verifies the correct information

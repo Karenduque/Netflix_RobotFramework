@@ -2,7 +2,7 @@
 
 
 *** Variables ***
-${URL_Netflix}     https://www.netflix.com/co/
-${EMAIL_ADMIN}    
+${URL_Netflix}     https://www.netflix.com/co-en/
+${EMAIL_ADMIN}     osmanyqy@yahoo.com
 ${PASS_ADMIN}
-${PASSWORD}        
+${PASSWORD}     Leonidas2020   

@@ -3,6 +3,8 @@ Library  Selenium2Library
 
 Resource       ../../Netflix/pagesobjects/registration-page.robot
 Resource       ../../Netflix/facades/Netflix-facade.robot
+Resource       ../../Netflix/stepdefinitions/home-sd.robot
+Resource       ../../Netflix/stepdefinitions/restart-membership-sd.robot
 
 ***Test Cases***
 Scenario: Correct restart membership 

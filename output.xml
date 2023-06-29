@@ -1,20 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230509 07:59:31.638" rpa="false" schemaversion="3">
-<suite id="s1" name="userRegistration" source="C:\Users\osman\OneDrive\Desktop\Automatizacion\Netflix_RobotFramework\Netflix\specs\userRegistration.robot">
-<test id="s1-t1" name="Correct user registration" line="8">
-<kw name="Given the Netflix page is open">
-<kw name="Given I am in Netflix page">
-<msg timestamp="20230509 07:59:32.518" level="FAIL">No keyword with name 'Given I am in Netflix page' found.</msg>
-<status status="FAIL" starttime="20230509 07:59:32.518" endtime="20230509 07:59:32.518"/>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230627 11:07:38.072" rpa="false" schemaversion="3">
+<suite id="s1" name="Restart-Membership" source="C:\Users\osman\OneDrive\Desktop\Automatizacion\Netflix_RobotFramework\Netflix\specs\restart-membership.robot">
+<test id="s1-t1" name="Scenario: Correct restart membership" line="10">
+<kw name="Given I am on the restart membership page" library="home-sd">
+<kw name="I am on the Netflix page" library="Netflix-facade">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL_Netflix}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230627 11:07:38.784" level="INFO">Opening browser 'chrome' to base url 'https://www.netflix.com/co-en/'.</msg>
+<status status="PASS" starttime="20230627 11:07:38.784" endtime="20230627 11:07:49.266"/>
 </kw>
-<kw name="And Print title of Netflix home" library="Netflix-facade">
-<status status="NOT RUN" starttime="20230509 07:59:32.519" endtime="20230509 07:59:32.519"/>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230627 11:07:49.267" endtime="20230627 11:07:49.504"/>
 </kw>
-<status status="FAIL" starttime="20230509 07:59:32.509" endtime="20230509 07:59:32.519"/>
+<status status="PASS" starttime="20230627 11:07:38.783" endtime="20230627 11:07:49.505"/>
 </kw>
-<status status="FAIL" starttime="20230509 07:59:32.507" endtime="20230509 07:59:32.522">No keyword with name 'Given I am in Netflix page' found.</status>
+<kw name="I enter the email" library="home-page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${emailInput}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230627 11:07:49.507" endtime="20230627 11:07:49.621"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${emailInput}</arg>
+<arg>osmanyqy@yahoo.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230627 11:07:49.621" level="INFO">Typing text 'osmanyqy@yahoo.com' into text field 'css=input[name='email']'.</msg>
+<status status="PASS" starttime="20230627 11:07:49.621" endtime="20230627 11:07:50.093"/>
+</kw>
+<status status="PASS" starttime="20230627 11:07:49.505" endtime="20230627 11:07:50.093"/>
+</kw>
+<kw name="I click get started button" library="home-page">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${getStartedButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230627 11:07:50.095" level="INFO">Clicking element 'css:.e1ax5wel1.default-ltr-cache-1n9pf0'.</msg>
+<status status="PASS" starttime="20230627 11:07:50.094" endtime="20230627 11:07:50.286"/>
+</kw>
+<status status="PASS" starttime="20230627 11:07:50.094" endtime="20230627 11:07:50.287"/>
+</kw>
+<kw name="Netflix redirects me to the restart membership page" library="restart-membership-page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${welcomeBackH1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230627 11:07:50.287" endtime="20230627 11:07:56.335"/>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<var>${saveVariable}</var>
+<arg>${welcomeBackH1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230627 11:07:56.445" level="INFO">${saveVariable} = Finish setting up your account</msg>
+<status status="PASS" starttime="20230627 11:07:56.335" endtime="20230627 11:07:56.446"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230627 11:08:06.446" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230627 11:07:56.446" endtime="20230627 11:08:06.446"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${saveVariable}</arg>
+<arg>Finish setting up your account</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230627 11:08:06.446" endtime="20230627 11:08:06.447"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230627 11:08:16.449" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230627 11:08:06.447" endtime="20230627 11:08:16.449"/>
+</kw>
+<status status="PASS" starttime="20230627 11:07:50.287" endtime="20230627 11:08:16.449"/>
+</kw>
+<status status="PASS" starttime="20230627 11:07:38.783" endtime="20230627 11:08:16.449"/>
+</kw>
+<kw name="When I enter the correct data">
+<kw name="Given I do step one correctly" library="restart-membership-sd">
+<kw name="I am in step one of restart membership" library="restart-membership-sd">
+<msg timestamp="20230627 11:08:16.451" level="FAIL">User keyword 'I am in step one of restart membership' contains no keywords.</msg>
+<status status="FAIL" starttime="20230627 11:08:16.451" endtime="20230627 11:08:16.451"/>
+</kw>
+<kw name="I enter the password">
+<status status="NOT RUN" starttime="20230627 11:08:16.460" endtime="20230627 11:08:16.460"/>
+</kw>
+<kw name="I click next">
+<status status="NOT RUN" starttime="20230627 11:08:16.472" endtime="20230627 11:08:16.472"/>
+</kw>
+<kw name="I can go to step two">
+<status status="NOT RUN" starttime="20230627 11:08:16.490" endtime="20230627 11:08:16.490"/>
+</kw>
+<status status="FAIL" starttime="20230627 11:08:16.451" endtime="20230627 11:08:16.490"/>
+</kw>
+<kw name="And I do step two correctly" library="restart-membership-sd">
+<status status="NOT RUN" starttime="20230627 11:08:16.491" endtime="20230627 11:08:16.491"/>
+</kw>
+<kw name="And I do step three correctly" library="restart-membership-sd">
+<status status="NOT RUN" starttime="20230627 11:08:16.491" endtime="20230627 11:08:16.492"/>
+</kw>
+<kw name="Then Netflix verifies the correct information" library="restart-membership-sd">
+<status status="NOT RUN" starttime="20230627 11:08:16.492" endtime="20230627 11:08:16.492"/>
+</kw>
+<status status="FAIL" starttime="20230627 11:08:16.449" endtime="20230627 11:08:16.492"/>
+</kw>
+<kw name="Then I restart membership">
+<status status="NOT RUN" starttime="20230627 11:08:16.493" endtime="20230627 11:08:16.493"/>
+</kw>
+<status status="FAIL" starttime="20230627 11:07:38.782" endtime="20230627 11:08:16.497">User keyword 'I am in step one of restart membership' contains no keywords.</status>
 </test>
-<status status="FAIL" starttime="20230509 07:59:31.644" endtime="20230509 07:59:32.534"/>
+<status status="FAIL" starttime="20230627 11:07:38.077" endtime="20230627 11:08:16.503"/>
 </suite>
 <statistics>
 <total>
@@ -23,7 +119,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="userRegistration">userRegistration</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Restart-Membership">Restart-Membership</stat>
 </suite>
 </statistics>
 <errors>
