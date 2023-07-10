@@ -1,7 +1,10 @@
 *** Settings ***
 Library  Selenium2Library
 
-Resource   ../../Netflix/pagesobjects/login-page.robot
+Resource    ../../Netflix/stepdefinitions/login-sd.robot  
+Resource    ../../Netflix/configuration/configuration-dev.robot
+Resource    ../../Netflix/pagesobjects/home-page.robot
+Resource    ../../Netflix/pagesobjects/login-page.robot
 
 ***Test Cases***
 Scenario:Enter to Login Page
@@ -20,7 +23,7 @@ enter a valid email account
     the data filled correnctly
 
 enter a correct password
-    the data filled correnctly
+    the data filled
 
 Click on Sign In button
     Cliking in the button

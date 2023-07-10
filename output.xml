@@ -1,32 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230615 08:28:07.315" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230709 20:41:23.917" rpa="false" schemaversion="3">
 <suite id="s1" name="Login" source="D:\Automatizacion\Netflix_RobotFramework\Netflix\specs\login.robot">
-<test id="s1-t1" name="Scenario:Enter to Login Page" line="7">
+<test id="s1-t1" name="Scenario:Enter to Login Page" line="10">
 <kw name="Given I am in Sign In page">
-<kw name="I open the url">
-<msg timestamp="20230615 08:28:07.712" level="FAIL">No keyword with name 'I open the url' found.</msg>
-<status status="FAIL" starttime="20230615 08:28:07.712" endtime="20230615 08:28:07.712"/>
+<kw name="I open the url" library="login-sd">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL_Netflix}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230709 20:41:24.239" level="INFO">Opening browser 'chrome' to base url 'https://www.netflix.com/co/'.</msg>
+<status status="PASS" starttime="20230709 20:41:24.238" endtime="20230709 20:41:32.974"/>
 </kw>
-<kw name="verify I am in the Sign In page">
-<status status="NOT RUN" starttime="20230615 08:28:07.719" endtime="20230615 08:28:07.720"/>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230709 20:41:32.974" endtime="20230709 20:41:33.159"/>
 </kw>
-<status status="FAIL" starttime="20230615 08:28:07.702" endtime="20230615 08:28:07.720"/>
+<status status="PASS" starttime="20230709 20:41:24.237" endtime="20230709 20:41:33.159"/>
+</kw>
+<kw name="verify I am in the Sign In page" library="login-sd">
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230709 20:41:33.190" level="INFO">${title} = Netflix Colombia: Ve series online, ve películas online</msg>
+<status status="PASS" starttime="20230709 20:41:33.160" endtime="20230709 20:41:33.190"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230709 20:41:33.190" endtime="20230709 20:41:33.191"/>
+</kw>
+<status status="PASS" starttime="20230709 20:41:33.159" endtime="20230709 20:41:33.191"/>
+</kw>
+<status status="PASS" starttime="20230709 20:41:24.236" endtime="20230709 20:41:33.192"/>
 </kw>
 <kw name="When enter a valid email account">
-<status status="NOT RUN" starttime="20230615 08:28:07.721" endtime="20230615 08:28:07.721"/>
+<kw name="the data filled correnctly" library="login-sd">
+<kw name="Input Text" library="Selenium2Library">
+<arg>${userLoginInput}</arg>
+<arg>${EMAIL_ADMIN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230709 20:41:33.195" level="INFO">Typing text 'jquinterocortes@gmail.com' into text field 'id:id_userLoginId'.</msg>
+<msg timestamp="20230709 20:41:33.830" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230709 20:41:33.830" level="FAIL">Element with locator 'id:id_userLoginId' not found.</msg>
+<status status="FAIL" starttime="20230709 20:41:33.193" endtime="20230709 20:41:33.838"/>
+</kw>
+<status status="FAIL" starttime="20230709 20:41:33.193" endtime="20230709 20:41:33.838"/>
+</kw>
+<status status="FAIL" starttime="20230709 20:41:33.192" endtime="20230709 20:41:33.838"/>
 </kw>
 <kw name="and enter a correct password">
-<status status="NOT RUN" starttime="20230615 08:28:07.722" endtime="20230615 08:28:07.722"/>
+<status status="NOT RUN" starttime="20230709 20:41:33.839" endtime="20230709 20:41:33.839"/>
 </kw>
 <kw name="and Click on Sign In button">
-<status status="NOT RUN" starttime="20230615 08:28:07.723" endtime="20230615 08:28:07.723"/>
+<status status="NOT RUN" starttime="20230709 20:41:33.840" endtime="20230709 20:41:33.840"/>
 </kw>
 <kw name="Then Netflix redirects to Users page">
-<status status="NOT RUN" starttime="20230615 08:28:07.724" endtime="20230615 08:28:07.724"/>
+<status status="NOT RUN" starttime="20230709 20:41:33.840" endtime="20230709 20:41:33.840"/>
 </kw>
-<status status="FAIL" starttime="20230615 08:28:07.700" endtime="20230615 08:28:07.724">No keyword with name 'I open the url' found.</status>
+<status status="FAIL" starttime="20230709 20:41:24.234" endtime="20230709 20:41:33.841">Element with locator 'id:id_userLoginId' not found.</status>
 </test>
-<status status="FAIL" starttime="20230615 08:28:07.319" endtime="20230615 08:28:07.731"/>
+<status status="FAIL" starttime="20230709 20:41:23.934" endtime="20230709 20:41:33.843"/>
 </suite>
 <statistics>
 <total>
@@ -39,5 +72,6 @@
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230709 20:41:24.206" level="ERROR">Error in file 'D:\Automatizacion\Netflix_RobotFramework\Netflix\stepdefinitions\login-sd.robot' on line 5: Resource file '..\..\Netflix\facades\Netflix-facade' does not exist.</msg>
 </errors>
 </robot>
