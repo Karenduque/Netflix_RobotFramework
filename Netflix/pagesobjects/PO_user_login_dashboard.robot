@@ -20,7 +20,7 @@ ${btn_log_in}    css:.btn.login-button.btn-submit.btn-small
 ${location} 
 ${login_title} 
 
-${sign_in_label}    css:.e1ax5wel1.default-ltr-cache-150ffti
+${sign_in_label}    css:.e1ax5wel1.default-ltr-cache-1b6vb2r
 ...                 #.e1ax5wel1.default-ltr-cache-1arlfc3
 
 ${id_userLoginId}    xpath=//input[@id='id_userLoginId']
@@ -70,7 +70,7 @@ I click in the "Iniciar sesión" button
     ##...    /html/body/div[1]/div/div[3]/div/div/div[1]/form/button
     Sleep    2s
     
-    
+   
 I can acces the to profiles screen
 # Esperar que cargue la página de los perfiles
     Wait Until Element Is Visible    ${profile_icon}
