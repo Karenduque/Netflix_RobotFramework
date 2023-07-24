@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230525 08:20:32.167" rpa="false" schemaversion="3">
-<suite id="s1" name="Select-User" source="D:\Automatizacion\Netflix_RobotFramework\Netflix\specs\select-user.robot">
-<test id="s1-t1" name="Scenario:Select user of Netflix" line="7">
-<kw name="Given I am in User profile page">
-<msg timestamp="20230525 08:20:32.514" level="FAIL">User keyword 'Given I am in User profile page' contains no keywords.</msg>
-<status status="FAIL" starttime="20230525 08:20:32.513" endtime="20230525 08:20:32.514"/>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230724 12:51:25.462" rpa="false" schemaversion="3">
+<suite id="s1" name="Home" source="D:\Automatizacion\Netflix_RobotFramework\Netflix\specs\home.robot">
+<test id="s1-t1" name="Scenario:Home page Netflix" line="14">
+<kw name="Given I am in the Netflix page">
+<kw name=" Open Netflix" library="home-sd">
+<kw name="prueba cguzman">
+<msg timestamp="20230724 12:51:25.822" level="FAIL">No keyword with name 'prueba cguzman' found.</msg>
+<status status="FAIL" starttime="20230724 12:51:25.822" endtime="20230724 12:51:25.822"/>
 </kw>
-<kw name="When I do click on the correct user profile icon">
-<status status="NOT RUN" starttime="20230525 08:20:32.515" endtime="20230525 08:20:32.515"/>
+<status status="FAIL" starttime="20230724 12:51:25.815" endtime="20230724 12:51:25.823"/>
 </kw>
-<kw name="Then Netflix redirects to series and movies content">
-<status status="NOT RUN" starttime="20230525 08:20:32.515" endtime="20230525 08:20:32.515"/>
+<kw name="Verify I am in the home page" library="home-sd">
+<status status="NOT RUN" starttime="20230724 12:51:25.823" endtime="20230724 12:51:25.823"/>
 </kw>
-<status status="FAIL" starttime="20230525 08:20:32.512" endtime="20230525 08:20:32.516">User keyword 'Given I am in User profile page' contains no keywords.</status>
+<kw name="I click on Login button" library="home-sd">
+<status status="NOT RUN" starttime="20230724 12:51:25.823" endtime="20230724 12:51:25.823"/>
+</kw>
+<status status="FAIL" starttime="20230724 12:51:25.815" endtime="20230724 12:51:25.823"/>
+</kw>
+<kw name="When I am filling the Sign data">
+<status status="NOT RUN" starttime="20230724 12:51:25.824" endtime="20230724 12:51:25.824"/>
+</kw>
+<kw name="Then clicking on Sign in button">
+<status status="NOT RUN" starttime="20230724 12:51:25.824" endtime="20230724 12:51:25.824"/>
+</kw>
+<status status="FAIL" starttime="20230724 12:51:25.814" endtime="20230724 12:51:25.825">No keyword with name 'prueba cguzman' found.</status>
 </test>
-<status status="FAIL" starttime="20230525 08:20:32.169" endtime="20230525 08:20:32.523"/>
+<status status="FAIL" starttime="20230724 12:51:25.465" endtime="20230724 12:51:25.830"/>
 </suite>
 <statistics>
 <total>
@@ -23,15 +35,26 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Select-User">Select-User</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Home">Home</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230525 08:20:32.496" level="ERROR">Error in file 'D:\Automatizacion\Netflix_RobotFramework\Netflix\pagesobjects\select-user-page.robot' on line 6: Resource file '..\..\Netflix\facades\Netflix-facade' does not exist.</msg>
-<msg timestamp="20230525 08:20:32.501" level="ERROR">Error in file 'D:\Automatizacion\Netflix_RobotFramework\Netflix\pagesobjects\select-user-page.robot' on line 8: Importing library 'Operatingsystem' failed: ModuleNotFoundError: No module named 'Operatingsystem'
+<msg timestamp="20230724 12:51:25.775" level="ERROR">Error in file 'D:\Automatizacion\Netflix_RobotFramework\Netflix\specs\home.robot' on line 3: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'ExtendedSelenium2Library'
 Traceback (most recent call last):
   None
 PYTHONPATH:
+  C:\Users\cathe\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\cathe\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\cathe\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\cathe\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\cathe\AppData\Local\Programs\Python\Python311
+  C:\Users\cathe\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+<msg timestamp="20230724 12:51:25.788" level="ERROR">Error in file 'D:\Automatizacion\Netflix_RobotFramework\Netflix\stepdefinitions\home-sd.robot' on line 3: Importing library 'D:\Automatizacion\Netflix_RobotFramework\Netflix\resources\inicio.py' failed: ModuleNotFoundError: No module named 'webdriver_manager'
+Traceback (most recent call last):
+  File "D:\Automatizacion\Netflix_RobotFramework\Netflix\resources\inicio.py", line 4, in &lt;module&gt;
+    from webdriver_manager.chrome import ChromeDriverManager
+PYTHONPATH:
+  D:\Automatizacion\Netflix_RobotFramework\Netflix\resources
   C:\Users\cathe\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
   C:\Users\cathe\AppData\Local\Programs\Python\Python311\python311.zip
   C:\Users\cathe\AppData\Local\Programs\Python\Python311\DLLs

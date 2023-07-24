@@ -1,5 +1,8 @@
 *** Settings ***
 Library  Selenium2Library
+Library  ./Netflix/resources/testing.py
+Library  ExtendedSelenium2Library
+
 
 Resource    ../../Netflix/stepdefinitions/login-sd.robot  
 Resource    ../../Netflix/configuration/configuration-dev.robot
